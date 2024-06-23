@@ -7,7 +7,7 @@ import java.util.List;
 
 @Repository
 public class UserRepositoryImpl implements UserRepository {
-    private static final List<User> users = new ArrayList<>();
+    private final List<User> users = new ArrayList<>();
 
     @Override
     public List<User> findAll() {
